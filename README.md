@@ -99,7 +99,7 @@ Click **Create Metric Filter**
 
 - In the CloudWatch console, go to **Alarms** > **In Alarm** > **Create alarm**.
 - Click **Select Metric**
-- Choose **Logs**, > **Login Group Metric** > **LoginFailures – IncomingLogEvents**
+- Choose **Logs** > **Login Group Metric** > **LoginFailures – IncomingLogEvents**
 
 Configure the Alarm Conditions:
 •  Set the **Statistic** to **Sum** (to aggregate the total login failures over the evaluation period).
