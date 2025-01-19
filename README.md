@@ -78,7 +78,7 @@ sudo systemctl status amazon-cloudwatch-agent
 ```
 
 **Explanation of the Pattern:**
-**timestamp=*Z:** Captures the timestamp in log entries,
+**timestamp=Z:** Captures the timestamp in log entries,
 **id:** Placeholder for the unique identifier of the log entry,
 **event=LOGIN_FAILED:** Matches log entries indicating failed login attempts,
 **user:** Captures the username involved in the failed login.
@@ -102,9 +102,9 @@ Click **Create Metric Filter**
 - Choose **Logs** > **Login Group Metric** > **LoginFailures – IncomingLogEvents**
 
 Configure the Alarm Conditions:
-•  Set the **Statistic** to **Sum** (to aggregate the total login failures over the evaluation period).
-•  Set the **Period** to **1 minute.**
-•  Define the threshold:
+- Set the **Statistic** to **Sum** (to aggregate the total login failures over the evaluation period).
+- Set the **Period** to **1 minute.**
+-  Define the threshold:
   •	Threshold type: **Static**
   •	Specify the threshold: **Greater than or equal to 5**
 
