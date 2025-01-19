@@ -105,8 +105,8 @@ Configure the Alarm Conditions:
 - Set the **Statistic** to **Sum** (to aggregate the total login failures over the evaluation period).
 - Set the **Period** to **1 minute.**
 -  Define the threshold:
-  •	Threshold type: **Static**
-  •	Specify the threshold: **Greater than or equal to 5**
+  - Threshold type: **Static**
+  - Specify the threshold: **Greater than or equal to 5**
 
 Configure action:
 - Alarm state trigger – In alarm
