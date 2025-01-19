@@ -78,6 +78,7 @@ sudo systemctl status amazon-cloudwatch-agent
 ```
 
 **Explanation of the Pattern:**
+
 •  timestamp=*Z: Captures the timestamp in log entries.
 •  id: Placeholder for the unique identifier of the log entry.
 •  event=LOGIN_FAILED: Matches log entries indicating failed login attempts.
