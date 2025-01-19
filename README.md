@@ -109,10 +109,10 @@ Configure the Alarm Conditions:
   •	Specify the threshold: **Greater than or equal to 5**
 
 Configure action:
-•	Alarm state trigger – In alarm
-•	Select Create New Topic
-•	Pass the Topic Name and the email endpoint
-•	Click Create Topic
+- Alarm state trigger – In alarm
+- Select Create New Topic
+- Pass the Topic Name and the email endpoint
+- Click Create Topic
 
 Hit next till everything is created.
 
