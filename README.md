@@ -130,7 +130,7 @@ Hit next till everything is created.
 **Simulate Login Failures:**
 •	Try to SSH into the instance with incorrect credentials about 5 times and observe the alarm behaviour. Check your CloudWatch alarm menu and your email endpoint
 
-![Image](https://github.com/user-attachments/assets/08a81c56-a99c-4fef-ac03-80bd261308e1)
+![Image](https://github.com/user-attachments/assets/8b562eb2-e49c-4d43-9431-a3f0f2535767)
 
 ![Image](https://github.com/user-attachments/assets/062466e4-cca3-4db6-8b72-aa4a4c6f91a4)
 
