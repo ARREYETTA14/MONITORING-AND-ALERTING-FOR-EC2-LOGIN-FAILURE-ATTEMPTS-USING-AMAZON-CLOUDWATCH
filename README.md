@@ -113,7 +113,7 @@ Configure the Alarm Conditions:
   - Threshold type: **Static**
   - Specify the threshold: **Greater than or equal to 5**
 
-![Image](https://github.com/user-attachments/assets/0246aab1-4451-4891-bacc-6aaef0a032c0)
+![Image](https://github.com/user-attachments/assets/35c833f8-9120-4bf3-a6dc-566cf13d369f)
 
 Configure action:
 - Alarm state trigger – In alarm
