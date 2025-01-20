@@ -64,18 +64,19 @@ sudo systemctl status amazon-cloudwatch-agent
 # 3. Set Up CloudWatch Alarms for Login Failures
 - Navigate to the CloudWatch Console
 - From the left-hand menu, go to **Logs** > **Log group**
-
+![Image](https://github.com/user-attachments/assets/2beb83d3-7f4c-4d2a-979d-42078e9812b2)
 
 - Locate and select the LoginFailures log group (this was created when you configured the CloudWatch agent to send logs)
-
+![Image](https://github.com/user-attachments/assets/87b4c3c2-649e-4ac3-88a6-bbd0f1820601)
 
 - Inside the LoginFailure log group, create a **metric filter**
-
+![Image](https://github.com/user-attachments/assets/6e7d4ef7-22dc-41c9-b50f-1cf2e4ef1875)
 
 - Define the **pattern** as follows:
 ```
 [timestamp=*Z, id, event=LOGIN_FAILED, user]
 ```
+![Image](https://github.com/user-attachments/assets/d31d51cd-ea50-445d-8805-4bef946296b8)
 
 **Explanation of the Pattern:**
 **timestamp=Z:** Captures the timestamp in log entries,
@@ -91,7 +92,7 @@ Provide a **Metric Name**:
 •	Example: LoginFailuresMetric.
 Define a **Metric Value**:
 •	Use the default value of 1 (each log event matching the filter increases the count by 1).
-
+![Image](https://github.com/user-attachments/assets/e61f359a-1303-4148-bc9c-46cfceb697f8)
 
 Click **Create Metric Filter**
 
@@ -108,11 +109,15 @@ Configure the Alarm Conditions:
   - Threshold type: **Static**
   - Specify the threshold: **Greater than or equal to 5**
 
+![Image](https://github.com/user-attachments/assets/0246aab1-4451-4891-bacc-6aaef0a032c0)
+
 Configure action:
 - Alarm state trigger – In alarm
 - Select Create New Topic
 - Pass the Topic Name and the email endpoint
 - Click Create Topic
+
+![Image](https://github.com/user-attachments/assets/35cf958b-da95-4152-b999-50281a654e9b)
 
 Hit next till everything is created.
 
@@ -121,7 +126,9 @@ Hit next till everything is created.
 **Simulate Login Failures:**
 •	Try to SSH into the instance with incorrect credentials about 5 times and observe the alarm behaviour. Check your CloudWatch alarm menu and your email endpoint
 
+![Image](https://github.com/user-attachments/assets/08a81c56-a99c-4fef-ac03-80bd261308e1)
 
+![Image](https://github.com/user-attachments/assets/062466e4-cca3-4db6-8b72-aa4a4c6f91a4)
 
 
 
