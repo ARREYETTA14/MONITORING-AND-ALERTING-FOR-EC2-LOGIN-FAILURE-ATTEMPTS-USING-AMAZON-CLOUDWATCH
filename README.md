@@ -64,12 +64,15 @@ sudo systemctl status amazon-cloudwatch-agent
 # 3. Set Up CloudWatch Alarms for Login Failures
 - Navigate to the CloudWatch Console
 - From the left-hand menu, go to **Logs** > **Log group**
+
 ![Image](https://github.com/user-attachments/assets/2beb83d3-7f4c-4d2a-979d-42078e9812b2)
 
 - Locate and select the LoginFailures log group (this was created when you configured the CloudWatch agent to send logs)
+  
 ![Image](https://github.com/user-attachments/assets/87b4c3c2-649e-4ac3-88a6-bbd0f1820601)
 
 - Inside the LoginFailure log group, create a **metric filter**
+  
 ![Image](https://github.com/user-attachments/assets/6e7d4ef7-22dc-41c9-b50f-1cf2e4ef1875)
 
 - Define the **pattern** as follows:
@@ -92,6 +95,7 @@ Provide a **Metric Name**:
 •	Example: LoginFailuresMetric.
 Define a **Metric Value**:
 •	Use the default value of 1 (each log event matching the filter increases the count by 1).
+
 ![Image](https://github.com/user-attachments/assets/e61f359a-1303-4148-bc9c-46cfceb697f8)
 
 Click **Create Metric Filter**
@@ -131,5 +135,10 @@ Hit next till everything is created.
 ![Image](https://github.com/user-attachments/assets/062466e4-cca3-4db6-8b72-aa4a4c6f91a4)
 
 
+**Why Each Step Is Important**
+- **Metric Filter:** Converts log events (failed logins) into a measurable metric that CloudWatch can track.
+- **Alarm Creation:** Allows you to monitor the metric, define acceptable thresholds, and receive real-time notifications via SNS.
+- **Threshold Setting:** Ensures the alarm triggers only when login failure activity surpasses a specific threshold, reducing false positives.
+- **Notification:** Alerts you immediately so you can take action, enhancing security by addressing potential unauthorized access quickly.
 
 
