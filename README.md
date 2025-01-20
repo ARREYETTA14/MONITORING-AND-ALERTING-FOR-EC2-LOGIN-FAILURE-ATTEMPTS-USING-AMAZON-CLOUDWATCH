@@ -125,6 +125,10 @@ Configure action:
 
 Hit next till everything is created.
 
+Navigate to your email and confirm your subscription to this SNS Topic
+
+![Image](https://github.com/user-attachments/assets/062466e4-cca3-4db6-8b72-aa4a4c6f91a4)
+
 # 6. Testing 
 
 **Simulate Login Failures:**
@@ -132,7 +136,7 @@ Hit next till everything is created.
 
 ![Image](https://github.com/user-attachments/assets/8b562eb2-e49c-4d43-9431-a3f0f2535767)
 
-![Image](https://github.com/user-attachments/assets/062466e4-cca3-4db6-8b72-aa4a4c6f91a4)
+
 
 
 **Why Each Step Is Important**
