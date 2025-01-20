@@ -121,7 +121,7 @@ Configure action:
 - Pass the Topic Name and the email endpoint
 - Click Create Topic
 
-![Image](https://github.com/user-attachments/assets/61e9b4cf-6100-4d9c-b8a6-7084bdf7ac94)
+![Image](https://github.com/user-attachments/assets/df8d8e1b-5f92-4f5e-b579-6a35dcf276d6)
 
 Hit next till everything is created.
 
