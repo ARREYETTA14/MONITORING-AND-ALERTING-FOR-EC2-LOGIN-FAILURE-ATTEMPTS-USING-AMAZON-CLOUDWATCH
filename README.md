@@ -1,7 +1,7 @@
 # MONITORING-AND-ALERTING-FOR-EC2-LOGIN-FAILURE-ATTEMPTS-USING-AMAZON-CLOUDWATCH
 
 # 1. Create an Amazon Linux 2 EC2 Instance
-- Create an Amazon Linux 2 EC2 Instance with the necessary security groups allowing SSH and relevant ports
+- Amazon Linux 2023 EC2 Instance with the necessary security groups allowing SSH and relevant ports
 - Attach an IAM role to the instance that has the following permissions:
 ```
 CloudWatchAgentServerPolicy
@@ -18,11 +18,11 @@ ssh -i your-key.pem ec2-user@your-instance-ip
 ```
 - Update the system:
 ```bash
-sudo yum update -y
+sudo dnf update -y
 ```
 - Install the CloudWatch Agent:
 ```bash
-sudo yum install amazon-cloudwatch-agent -y
+sudo dnf install amazon-cloudwatch-agent -y
 ```
 
 Configure the CloudWatch Agent:
@@ -143,6 +143,6 @@ Navigate to your email and confirm your subscription to this SNS Topic
 - **Metric Filter:** Converts log events (failed logins) into a measurable metric that CloudWatch can track.
 - **Alarm Creation:** Allows you to monitor the metric, define acceptable thresholds, and receive real-time notifications via SNS.
 - **Threshold Setting:** Ensures the alarm triggers only when login failure activity surpasses a specific threshold, reducing false positives.
-- **Notification:** Alerts you immediately so you can take action, enhancing security by addressing potential unauthorized access quickly.
+- **Notification:** Alerts you immediately so you can take action, enhancing security by addressing potential unauthorised access quickly.
 
 
