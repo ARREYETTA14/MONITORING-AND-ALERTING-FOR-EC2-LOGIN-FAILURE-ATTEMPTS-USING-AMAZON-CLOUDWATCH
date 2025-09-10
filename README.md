@@ -38,7 +38,7 @@ sudo nano /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json
       "files": {
         "collect_list": [
           {
-            "file_path": "/var/log/secure",
+            "file_path": "/var/log/audit/audit.log",
             "log_group_name": "LoginFailures",
             "log_stream_name": "{instance_id}"
           }
@@ -47,6 +47,7 @@ sudo nano /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json
     }
   }
 }
+
 ```
 **Notes:** Specifies what log files to monitor ```(/var/log/secure)``` and where to send them in CloudWatch ```(log group: LoginFailures)```
 -	Save and exit
