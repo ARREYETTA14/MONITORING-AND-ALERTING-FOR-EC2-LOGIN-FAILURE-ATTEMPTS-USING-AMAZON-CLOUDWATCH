@@ -83,18 +83,27 @@ sudo systemctl status amazon-cloudwatch-agent
 ![Image](https://github.com/user-attachments/assets/d31d51cd-ea50-445d-8805-4bef946296b8)
 
 **Explanation of the Pattern:**
+
 **timestamp=Z:** Captures the timestamp in log entries,
+
 **id:** Placeholder for the unique identifier of the log entry,
+
 **event=LOGIN_FAILED:** Matches log entries indicating failed login attempts,
+
 **user:** Captures the username involved in the failed login.
 
 # 4. Assign a Metric to the Filter
 
 Specify a **Metric Namespace**:
+
 •	Example: CustomNamespace.
+
 Provide a **Metric Name**:
+
 •	Example: LoginFailuresMetric.
+
 Define a **Metric Value**:
+
 •	Use the default value of 1 (each log event matching the filter increases the count by 1).
 
 ![Image](https://github.com/user-attachments/assets/e61f359a-1303-4148-bc9c-46cfceb697f8)
