@@ -1,4 +1,4 @@
-# MONITORING-AND-ALERTING-FOR-EC2-LOGIN-FAILURE-ATTEMPTS-USING-AMAZON-CLOUDWATCH
+# MONITORING-AND-ALERTING-FOR-EC2-LOGIN-FAILURE-ATTEMPTS-USING-AMAZON-CLOUDWATCH.
 
 # 1. Create an Amazon Linux 2 EC2 Instance
 - Amazon Linux 2023 EC2 Instance with the necessary security groups allowing SSH and relevant ports
