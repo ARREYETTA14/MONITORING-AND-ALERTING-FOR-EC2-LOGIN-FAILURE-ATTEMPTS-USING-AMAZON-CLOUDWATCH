@@ -64,7 +64,7 @@ sudo systemctl status amazon-cloudwatch-agent
 
 # 3. Set Up CloudWatch Alarms for Login Failures
 - Navigate to the CloudWatch Console
-- From the left-hand menu, go to **Logs** > **Log group**
+- From the left-hand menu, go to **Logs** > **Log Management**
 
 ![Image](https://github.com/user-attachments/assets/2beb83d3-7f4c-4d2a-979d-42078e9812b2)
 
